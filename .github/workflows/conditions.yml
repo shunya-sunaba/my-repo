@@ -1,0 +1,8 @@
+name: Conditions
+on: push
+jobs:
+    skip-ro-run:
+        runs-on: ubuntu-lateset
+        steps:
+            - run: echo "hello"
+              if: ${{  contains(github.run_id,'1') }}
