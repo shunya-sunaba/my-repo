@@ -1,7 +1,7 @@
 name: Auto merge
 on: pull_request
 jobs:
-    merge:
+    merges:
         if: ${{ github.actor == 'dependabot[bot]' }}
         runs-on: ubuntu-latest
         permissions:
