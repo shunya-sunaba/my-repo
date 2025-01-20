@@ -1,2 +1,7 @@
 name: Invalid
 on: push
+jobs:
+    run:
+        runs-on: ubuntu-latest
+        steps:
+            - run: echo "YAML SyntaxError"
