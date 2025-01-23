@@ -6,8 +6,8 @@ on:
                 type: string
                 default: ${{ github.event.pull_request.number }}
                 required: false
-                descriptioN: プルリクエスト番号
-        secret:
+                description: プルリクエスト番号
+        secrets:
             token:
                 required: true
                 description: GitHubトークン
